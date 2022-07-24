@@ -81,6 +81,7 @@ const NavMenu = style.div`
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                text-align: center;
         
                 .link {
                     color: black;
@@ -88,11 +89,57 @@ const NavMenu = style.div`
                     font-size: 13px;
                     letter-spacing: 1.3px;
                     cursor: pointer;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    padding-left: 50px;
+                }
+
+                .link:hover {
+                    border-bottom: 1.5px solid #000;
                 }
             }
-        }
-    
+        }     
+        @media(max-width: 560px) {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            max-width: 100vw;
+
+            div:first-child {
+                width: 100vw;
+
+                img {
+                    width: 250px;
+                    margin: 0;
+                }
+            }
+
+            div:nth-child(2) {
+                align-items: center;
+                width: 90vw;
+                ul {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 20px auto;
+
+                    .link {
+                        // width: 40%;
+                        width: auto;
+                        padding: 0;
+                        font-size: 10px;
+                        text-align: center;
+                    }
+
+                    .link:hover {
+                        border-top: 1.5 solid #000;
+                    }
+                }
+            }
+        } 
     }
+
 
 
 `
@@ -110,6 +157,7 @@ const NavAbout = style.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 
     .text {
         width: 70vw;
@@ -166,6 +214,51 @@ const NavAbout = style.div`
                 color: #fff;
                 background: rgb(45, 68, 171);
                 font-weight: 100;
+            }
+        }
+    }
+
+    @media(max-width: 560px) {
+        .text {
+            width: 60vw;
+            margin: 30px auto;
+            text-align: center;
+            align-items: center;
+
+            h1 {
+                width: auto;
+                font-size: 25px;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            button {
+                padding: 20px 20px;
+            }
+        }
+
+        .phone {
+            display: flex;
+            flex-direction: column;
+            width: 60vw;
+
+            div {
+                width: 100%;
+            }
+
+            .num {
+                
+                p {
+                    font-size: 17px;
+                }
+            }
+
+            .btn {
+
+                button {
+                    width: 100%;
+                    font-size: 17px;
+                }
             }
         }
     }

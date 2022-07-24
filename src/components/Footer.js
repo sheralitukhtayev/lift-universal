@@ -55,6 +55,11 @@ const Container = style.div`
     width: 80vw;
     margin: 0 auto;
 
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+    }
+
 `
 
 
@@ -75,6 +80,13 @@ const FooHead = style.div`
         margin: 10px 0;
     }
 
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        text-align: center;
+    }
+
 `
 
 const Number = style.div`
@@ -88,6 +100,13 @@ const Number = style.div`
         font-weight: 600;
         font-size: 18px;
         margin: 2px 0;
+    }
+
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        text-align: center;
     }
 `
 
@@ -105,6 +124,13 @@ const FooLoc = style.div`
         margin: 30px 0;
     }
 
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        text-align: center;
+    }
+
 `
 
 const FooEma = style.div`
@@ -113,6 +139,13 @@ const FooEma = style.div`
 
     p:nth-child(2) {
         margin: 10px 0;
+    }
+
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        text-align: center;
     }
 
 `

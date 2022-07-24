@@ -446,6 +446,7 @@ const Our = style.div`
 
         }
 
+
     }
 
     .OurImg {
@@ -465,6 +466,21 @@ const Our = style.div`
             padding: 20px 40px;
             font-size: 18px;
             color: #fff;
+        }
+    }
+
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+
+        .OurImg {
+            width: 80vw;
+            margin: 30px auto;
+
+            img {
+                width: 100%;
+            }
         }
     }
 
@@ -547,6 +563,45 @@ const Advantage = style.div`
         }
     }
 
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+
+        .AdvGroup {
+            display: flex;
+            flex-direction: column;
+            width: 80vw;
+            
+
+            .Group {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+
+                img {
+                    width: 50px;
+                }
+
+                h4 {
+                    width: 75%;
+                    margin: auto 0;
+                }
+
+                div {
+                    display: none;
+                }
+
+                p {
+                    display: none;
+                }
+            }
+
+        }
+    }
+
 `
 
 const AdvLine = style.div`
@@ -592,6 +647,12 @@ const ProjectOne = style.div`
     justify-content: space-between;
     margin: 10px 0;
 
+    @media(max-width: 560px) {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+
 `
 
 const Prj = style.div`
@@ -628,6 +689,25 @@ const Prj = style.div`
         background-color: rgb(18, 66, 175);
     }
 
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0;
+
+        img {
+            width: 100px;
+        }
+
+        .BldText {
+            
+        }
+
+
+    }
+
 `
 
 const ProjectTwo = style(ProjectOne) `
@@ -659,6 +739,12 @@ const BldText = style.div`
         margin: 10px 0;
     }
 
+    @media(max-width: 560px) {
+        h1 {
+            font-size: 30px;
+        }
+    }
+
 `
 
 const Building = style.div`
@@ -672,6 +758,12 @@ const BuildOne = style.div`
     flex-direction: row;
     justify-content: space-between;
     margin: 10px 0;
+
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
 
 `
 
@@ -709,6 +801,25 @@ const Bld = style.div`
         background-color: rgb(18, 66, 175);
     }
 
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 20px 0;
+
+        img {
+            width: 100px;
+        }
+
+        .BldText {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
 `
 
 const BuildTwo = style(BuildOne) `
@@ -737,6 +848,11 @@ const SerText = style.div`
 const Title = style.div`    
     display: flex;
 
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
 `
 
@@ -750,10 +866,23 @@ const TitOne = style.div`
         font-size: 18px;
     }
 
+    @media(max-width: 560px) {
+        width: 45%;
+        text-align: center;
+        
+        p{
+            font-size: 12px;
+        }
+    }
+
 `
 
 const TitTwo = style(TitOne)`
     margin: 0 80px;
+
+    @media(max-width: 560px) {
+        margin: 0;
+    }
 
 
 `
@@ -777,6 +906,15 @@ const Review = style.div`
         margin: 40px auto;
     }
 
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+
 ` 
 
 const VideoSlider = style.div`
@@ -789,6 +927,14 @@ const VideoSlider = style.div`
         margin: 0 auto;
     }
 
+    @media(max-width: 560px) {
+        padding: 0;
+
+        .Video {
+            display: none;
+        }
+    }
+
 `
 
 const Cabin = style.div`
@@ -798,11 +944,22 @@ const Cabin = style.div`
     justify-content: space-between;
     padding: 50px 0;
 
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+    }
+
 `
 
 const CabTit = style.div`
     width: 25%;
     padding: 50px 0;
+
+    @media(max-width: 560px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 
 `
 
@@ -848,6 +1005,17 @@ const CabImg = style.div`
         width: 50%;
     }
 
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+
+        img {
+            width: 100%;
+            margin: 20px 0;
+        }
+    }
+
 `
 
 const Team = style.div`
@@ -863,11 +1031,23 @@ const  TeamCont = style.div`
     justify-content: space-between;
     padding: 70px 0;
 
+    @media(max-width: 560px){
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 
 `
 
 const TmTit = style.div`
     width: 30%;
+
+    @media(max-width: 560px){
+        width: 100%;
+    
+    }
 
 `
 
@@ -887,6 +1067,12 @@ const TimHead = style.div`
     color: rgb(112, 221, 255);  
     margin: 20px 0;
 
+    @media(max-width: 560px) {
+        h1 {
+            font-size: 20px;
+        }
+    }
+
 `
 
 const TmBtn = style.div`
@@ -897,12 +1083,22 @@ const TmBtn = style.div`
         font-size: 20px;
     }
 
+    @media(max-width: 560px){
+        margin: 30px 0;
+    }
+
 `
 
 const TmCrt = style.div`
     width: 60%;
     display: flex;
     justify-content: space-between;
+
+    @media(max-width: 560px){
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
 
 `
 
@@ -913,6 +1109,11 @@ const TmDr = style.div`
     flex-direction: row;
     height: 200px; 
     align-items: center;
+
+    @media(max-width: 560px) {
+        width: 100%; 
+        margin: 20px 0;
+    }
     
 
 `
@@ -932,6 +1133,12 @@ const TmDrTit = style.div`
         color: gray;
         font-size: 15px;
         font-weight: 100;
+    }
+
+    @media(max-width: 560px) {
+        width: 30%;
+        text-align: center;
+        align-items: center;
     }
 
 `
@@ -987,6 +1194,11 @@ const ProImgs = style.div`
     flex-direction: row;
     justify-content: space-between;
 
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+    }
+
 `
 
 const Img = style.div`
@@ -999,6 +1211,14 @@ const Img = style.div`
         width: 100%;
         height: 100%;
         background-size: cover;
+    }
+
+    @media(max-width: 560px) {
+        width: 80vw;
+
+        img {
+            width: 100%;
+        }
     }
 
 `
@@ -1046,6 +1266,11 @@ const Logos = style.div`
     display: flex;
     justify-content: space-between;
 
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;
+    }
+
 `
 
 const Logo = style.div`
@@ -1057,6 +1282,10 @@ const Logo = style.div`
         width: 100%;
     }
 
+    @media(max-width: 560px) {
+        width: 100%;
+    }
+
 `
 
 const Consultation = style.div`
@@ -1065,6 +1294,13 @@ const Consultation = style.div`
     padding: 30px 0;
     display: flex;
     // justify-content: space-between;
+
+    @media(max-width: 560px) {
+        display: flex;
+        flex-direction: column;s
+        text-align: center;
+        align-items: center;
+    }
 
 `
 
@@ -1082,6 +1318,10 @@ const ConstTit = style.div`
         color: gray;
         font-size: 20px;
         margin: 30px 0;
+    }
+
+    @media(max-width: 560px) {
+        width: 80%;
     }
 
 `
@@ -1111,6 +1351,22 @@ const ConsInp = style.div`
 
     button:hover {
         background: rgb(255, 68, 69);
+    }
+
+    @media(max-width: 560px) {
+        width: 80%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+
+        input {
+            padding: 20px 10px;
+        }
+
+        button {
+            width: auto;
+        }
     }
 
 `

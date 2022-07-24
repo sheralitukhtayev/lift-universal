@@ -65,7 +65,7 @@ function Vocation() {
                     </div>
                     <Inputs>
                         <h6>Комментарий</h6>
-                        <textarea className="Comment" name="message" id="" cols="62" rows="10"></textarea>
+                        <textarea className="Comment" name="message" id=""></textarea>
                     </Inputs>
                 </ResCont>
             </Resume>
@@ -214,6 +214,15 @@ const ResCont = style.div`
         }
     }
 
+    @media(max-width: 560px) {
+        h5 {
+            display: none;
+        }
+        .Btn {
+            display: none;
+        }
+    }
+
     button {
         cursor: pointer;
         padding: 5px 10px;
@@ -252,7 +261,11 @@ const Inputs = style.div`
 
     .Comment {
         border: 1px solid #000;
-        padding: 10px 10px;
+        padding: 50px 225px;
+
+        @media(max-width: 560px) {
+            padding: 40px 0;
+        }
     }
 
     
