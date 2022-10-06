@@ -68,7 +68,8 @@ function Vocation() {
                         <h6>Комментарий</h6>
                         <textarea className="Comment" name="message" id=""></textarea>
                     </Inputs>
-                <form />
+                 <button type="submit">Send</button>
+                </form>
                 </ResCont>
             </Resume>
         </Container>
