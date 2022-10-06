@@ -42,7 +42,7 @@ function Vocation() {
             <Resume>
                 <h1>Отправить резюме</h1>
                 <ResCont>
-                <form action="https://formsubmit.co/sheralitukhtayev@gmail.com">
+                <form action="https://formsubmit.co/sheralitukhtayev@gmail.com" method="post">
                     <Inputs>
                         <h6><span>*</span> Вакансия</h6>
                         <input placeholder="Не вибрано"/>
